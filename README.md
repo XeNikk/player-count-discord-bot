@@ -11,7 +11,7 @@
 - [ ] Open cmd & type `cd Path`
 - [ ] Start the bot using `node .` in terminal
 # 🎮 Supported games
-TYPE | NAME
+CODE | NAME
 ------------ | -------------
 | `7d2d`     | 7 Days to Die (2013)
 | `ageofchivalry` | Age of Chivalry (2007)

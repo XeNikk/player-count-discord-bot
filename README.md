@@ -1,6 +1,8 @@
 # 🤖 Player count discord bot
 ### Simple players counter on bot presence on [Discord.js](https://discord.js.org/) framework.
 ##### Created with ❤ by XeN
+### 🎉 Preview
+![TEST](https://cdn.discordapp.com/attachments/329612536452218883/770776902313967656/unknown.png)
 # 💾 Requirements
 - [Node.js v12.0.0](https://nodejs.org/en/)
 - [Discord appliaction](https://discord.com/developers/applications)

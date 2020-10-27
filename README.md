@@ -1,7 +1,14 @@
 # 🤖 Player count discord bot
 ### Simple players counter on bot presence on [Discord.js](https://discord.js.org/) framework.
 ##### Created with ❤ by XeN
-# Supported games
+# 💾 Requirements
+- [Node.js v12.0.0](https://nodejs.org/en/)
+- [Discord appliaction](https://discord.com/developers/applications)
+# ⚙️ Configuration
+- [ ] Set configuration in `config.js`
+- [ ] Open cmd & type `cd Path`
+- [ ] Start the bot using `node .` in terminal
+# 🎮 Supported games
 TYPE | NAME
 ------------ | -------------
 | `7d2d`     | 7 Days to Die (2013)

@@ -279,5 +279,5 @@ TYPE | NAME
 | `xpandrally` | Xpand Rally
 | `zombiemaster` | Zombie Master
 | `zps`      | Zombie Panic: Source
-# Used modules
+# 🌐 Used modules
 - [gamedig](https://www.npmjs.com/package/gamedig) ([Github](https://github.com/gamedig/node-gamedig))

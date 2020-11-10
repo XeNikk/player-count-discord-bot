@@ -5,5 +5,5 @@ exports.config = {
     "port": "22003",
     "refreshInteval": 60000,
     "channelText": "Online players: ",
-    "channelID": YORCHANNELID,
+    "channelID": "YOUR CHANNEL ID",
 }

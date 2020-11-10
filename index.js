@@ -10,6 +10,10 @@ function getPlayers() {
         port: cfg.config.port
     }).then((data) => {
         client.user.setActivity(`${data.raw.numplayers}/${data.maxplayers}`)
+        let channel = client.channels.cache.get(cfg.config.channelID)
+        if(channel) {
+            channel.setName(`Gracze online: ${data.maxplayers}`)
+        }
     }).catch((error) => {
         console.log("ERROR: SERVER NOT FOUND");
     });

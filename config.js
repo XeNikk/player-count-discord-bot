@@ -4,6 +4,6 @@ exports.config = {
     "serverIP": "51.83.131.92",
     "port": "22003",
     "refreshInteval": 60000,
-    "channelText": "Online players: "
+    "channelText": "Online players: ",
     "channelID": YORCHANNELID,
 }

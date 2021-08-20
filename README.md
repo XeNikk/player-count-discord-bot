@@ -7,7 +7,7 @@
 #### Channel name example
 ![CHANNEL](https://cdn.discordapp.com/attachments/329612536452218883/775728028495773736/unknown.png)
 # 💾 Requirements
-- [Node.js v12.0.0](https://nodejs.org/en/)
+- [Node.js v16.x.x](https://nodejs.org/en/)
 - [Discord appliaction](https://discord.com/developers/applications)
 # ⚙️ Configuration
 - [ ] Set configuration in `config.js`

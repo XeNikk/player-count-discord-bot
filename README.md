@@ -12,6 +12,7 @@
 # ⚙️ Configuration
 - [ ] Set configuration in `config.js`
 - [ ] Open cmd & type `cd Path`
+- [ ] Install packages using `npm install`
 - [ ] Start the bot using `node .` in terminal
 # 🎮 Supported games
 CODE | NAME

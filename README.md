@@ -1,7 +1,7 @@
 # 🤖 Player count discord bot
 ### Simple players counter on bot presence on [Discord.js](https://discord.js.org/) framework.
 ##### Created with ❤ by XeN
-### 🎉 Preview
+# 🎉 Preview
 #### Rich presence example
 ![PRESENCE](https://cdn.discordapp.com/attachments/329612536452218883/770776902313967656/unknown.png)
 #### Channel name example
@@ -11,7 +11,7 @@
 - [Discord appliaction](https://discord.com/developers/applications)
 # ⚙️ Configuration
 - [ ] Set configuration in `config.js`
-- [ ] Open cmd & type `cd Path`
+- [ ] Open cmd & type `cd [destination of files]`
 - [ ] Install packages using `npm install`
 - [ ] Start the bot using `node .` in terminal
 # 🎮 Supported games

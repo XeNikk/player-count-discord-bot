@@ -1,30 +1,44 @@
-const Discord = require('discord.js');
-const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS]});
-const cfg = require("./config");
-const Gamedig = require('gamedig');
+const { config } = require("./config"); // Configuration
 
-function getPlayers() {
-    Gamedig.query({
-        type: cfg.config.game,
-        host: cfg.config.serverIP,
-        port: cfg.config.port
-    }).then((data) => {
-        client.user.setActivity(`${data.raw.numplayers}/${data.maxplayers}`)
-        let channel = client.channels.cache.get(cfg.config.channelID)
-        if(channel) {
-            channel.setName(cfg.config.channelText + data.raw.numplayers)
+// Modules
+const Discord = require('discord.js'),
+      Gamedig = require('gamedig');
+
+// Counting alternator
+function countAlternator(count = 0) {
+    // little parser
+    if (typeof count !== "number") {
+        switch (typeof count) {
+            case "string":
+                count = parseInt(count);
+                break;
+            default:
+                if (typeof count !== "number") throw Error(`Excepted at 'count' arg a "number", got '${typeof count}'`);
         }
-    }).catch((error) => {
-        console.log("ERROR: SERVER NOT FOUND");
-    });
+    }
+
+    return count === 1 ? `${count} player` : `${count} players`;
+}
+
+// Asynchrous gathering players count/players data
+async function getPlayers() {
+    const query = await Gamedig.query({ type: config.game, host: config.serverIP, port: config.port });
+
+    if (query) {
+        client.user.setActivity(`${countAlternator(data.raw.numplayers)}/${countAlternator(data.maxplayers)}`);
+        
+        const channel = client.channels.cache.get(config.channelID);
+
+        if (channel) channel.setName(config.channelText + data.raw.numplayers);
+    }
 }
 
 client.on('ready', () => {
     console.log(`Ready!`);
     getPlayers();
-    setInterval(function(){
-        getPlayers();
-    }, cfg.config.refreshInteval)
+    setInterval(async function(){
+        await getPlayers();
+    }, config.refreshInteval)
 });
 
-client.login(cfg.config.token);
+client.login(config.token);

@@ -30,7 +30,7 @@ async function getPlayers() {
         const channel = client.channels.cache.get(config.channelID);
 
         if (channel) channel.setName(config.channelText + data.raw.numplayers);
-    }
+    } else console.log("Something went wrong when gathering player data");
 }
 
 client.on('ready', () => {
